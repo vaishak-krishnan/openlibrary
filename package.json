@@ -7,6 +7,10 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "npm": "6.14.13",
+    "node": "14.17.0"
+  },
   "author": "Vaishak C Krishnan",
   "license": "ISC",
   "dependencies": {
