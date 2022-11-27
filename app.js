@@ -1,11 +1,10 @@
 const express = require("express");
 const app = new express();
-const cors = require("cors");//Back end to frontend communication
-const logger = require("morgan");//log api call on terminal
+const cors = require("cors");
+const logger = require("morgan");
 
 
-// to pass data from frontend to backend.  use => while starting the app, use is executed
-app.use(express.json());//json pair
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(logger("dev"));
@@ -33,8 +32,8 @@ app.get('/*', function (req, res) {
 });
 
 // set port 
-const port = "api";
-// const port = process.env.PORT || 3000;
+// const port = "api";
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`........port is now connected at ${port} ........`);
 });

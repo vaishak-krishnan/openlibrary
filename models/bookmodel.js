@@ -1,5 +1,4 @@
-// Schmmema for Book data
-
+// libraryschema
 
 const mongoose = require("mongoose");
 const schema = mongoose.Schema;
