@@ -33,8 +33,8 @@ app.get('/*', function (req, res) {
 });
 
 // set port 
-// const port = "api";
-const port = process.env.PORT || 3000;
+const port = "api";
+// const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`........port is now connected at ${port} ........`);
 });
